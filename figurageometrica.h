@@ -2,18 +2,18 @@
 #define FIGURAGEOMETRICA_H
 
 #include "scuptor.h"
-#include<string>
-#include<sstream>
-#include<fstream>
-#include<iostream>
-#include"scuptor.h"
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <iostream>
 
 class figurageometrica{
-  protected:
-  float r,g,b,a;
-  public:
-  virtual ~figurageometrica(){};
-  virtual void draw(scuptor &asd)=0;
+    protected:
+    float r,g,b,a;
+
+    public:
+    virtual ~figurageometrica(){};
+    virtual void draw(scuptor &asd)=0;
 };
 
 #endif // FIGURAGEOMETRICA_H

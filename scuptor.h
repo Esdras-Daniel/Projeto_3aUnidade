@@ -2,22 +2,22 @@
 #define SCUPTOR_H
 
 struct ponto{
- float xp,yp,zp;
+    float xp,yp,zp;
 };
 
 struct face{
-float a,p0,p1,p2,p3;
+    float a,p0,p1,p2,p3;
 };
 
 struct voxel{
-  float r,g,b;
-  float a ;
+    float r,g,b;
+    float a ;
 };
 
- struct voxel_final{
-  struct ponto vertice[8];
-  struct face plano[6];
-  struct voxel cubo;
+struct voxel_final{
+    struct ponto vertice[8];
+    struct face plano[6];
+    struct voxel cubo;
 };
 
 
